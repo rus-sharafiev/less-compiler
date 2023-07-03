@@ -1,5 +1,5 @@
 import { dirname, join } from "https://deno.land/std@0.188.0/path/mod.ts"
-import less from "./less-src/less-node/index.js"
+import less from "./less/less-node/index.js"
 
 // --------------------------------------------------------------------------------
 
