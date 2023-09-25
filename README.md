@@ -3,7 +3,7 @@
 CLI tool that uses original [Less.js](https://lesscss.org/) compiler (v4.2.0) but running inside [Deno](https://deno.com/) compiled app.  
 Minimal changes were made to the compiler source code:
 - added file extensions in import (required for Deno)
-- fs, URL and path are replaced with the same ones from Deno Std. Library 0.202.0
+- fs, url and path are replaced with the same ones from Deno Std. Library 0.202.0
 
 Unlike the original `lessc`, the Node is not required.
 
