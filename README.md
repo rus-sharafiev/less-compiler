@@ -8,7 +8,7 @@ Minimal changes were made to the compiler source code:
 Unlike the original `lessc`, the Node is not required.
 
 ## Usage
-Install [Deno](https://docs.deno.com/runtime/manual/getting_started/installation), pick compiler type, ror CLI tool run
+Install [Deno](https://docs.deno.com/runtime/manual/getting_started/installation), pick compiler type, for CLI tool run
 ```
 deno compile --allow-read --allow-write less-compiler-cli.ts
 ```
