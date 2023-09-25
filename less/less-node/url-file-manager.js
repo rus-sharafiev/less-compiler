@@ -4,7 +4,7 @@
  * and are TS-type-checked
  */
 const isUrlRe = /^(?:https?:)?\/\//i;
-import url from 'https://deno.land/std@0.110.0/node/url.ts';
+import { normalize } from 'https://deno.land/std@0.202.0/url/mod.ts';
 let request;
 import AbstractFileManager from '../less/environment/abstract-file-manager.js';
 import logger from '../less/logger.js';
@@ -26,7 +26,7 @@ UrlFileManager.prototype = Object.assign(new AbstractFileManager(), {
                 return;
             }
 
-            let urlStr = isUrlRe.test(filename) ? filename : url.resolve(currentDirectory, filename);
+            let urlStr = isUrlRe.test(filename) ? filename : normalize(currentDirectory, filename);
 
             /** native-request currently has a bug */
             const hackUrlStr = urlStr.indexOf('?') === -1 ? urlStr + '?' : urlStr

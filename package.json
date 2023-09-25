@@ -1,6 +1,19 @@
 {
-  "dependencies": {
-    "sass": "^1.62.1",
-    "sass-embedded": "^1.62.0"
-  }
+  "name": "@russh/standalone-less-compiler",
+  "version": "1.0.0",
+  "description": "Standalone LESS compiler",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rus-sharafiev/less-compiler.git"
+  },
+  "keywords": [
+    "LESS",
+    "compiler"
+  ],
+  "author": "Rus Sharafiev",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rus-sharafiev/less-compiler/issues"
+  },
+  "homepage": "https://github.com/rus-sharafiev/less-compiler#readme"
 }

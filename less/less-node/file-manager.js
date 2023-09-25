@@ -1,5 +1,5 @@
-import path from 'https://deno.land/std@0.110.0/node/path.ts';
-import fs from 'https://deno.land/std@0.110.0/node/fs.ts';
+import { join } from 'https://deno.land/std@0.202.0/path/mod.ts';
+import fs from 'https://deno.land/std@0.177.1/node/fs.ts';
 import AbstractFileManager from '../less/environment/abstract-file-manager.js';
 
 const FileManager = function () { }
@@ -85,7 +85,7 @@ FileManager.prototype = Object.assign(new AbstractFileManager(), {
                             fullFilename = fileParts.rawPath + prefixes[j] + fileParts.filename;
 
                             if (paths[i]) {
-                                fullFilename = path.join(paths[i], fullFilename);
+                                fullFilename = join(paths[i], fullFilename);
                             }
 
                             if (!explicit && paths[i] === '.') {

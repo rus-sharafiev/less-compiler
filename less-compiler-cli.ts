@@ -28,7 +28,7 @@ async function prompt(message: string) {
 
 (async () => {
 
-    const lessPath = await prompt('Standalone LESS compiler v0.0.1\n\nSet source file location: ')
+    const lessPath = await prompt('Standalone LESS compiler v1.0.0\n\nSet source file location: ')
     const outfileDir = await prompt('Set outfile folder: ')
     const outfileName = await prompt('Set outfile name: ')
 

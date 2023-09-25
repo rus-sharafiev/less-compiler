@@ -1,4 +1,4 @@
-import * as path from "https://deno.land/std@0.110.0/node/path.ts";
+import { dirname, join } from 'https://deno.land/std@0.202.0/path/mod.ts';
 import AbstractPluginLoader from '../less/environment/abstract-plugin-loader.js';
 
 /**
@@ -7,11 +7,11 @@ import AbstractPluginLoader from '../less/environment/abstract-plugin-loader.js'
 const PluginLoader = function (less) {
     this.less = less;
     this.require = prefix => {
-        prefix = path.dirname(prefix);
+        prefix = dirname(prefix);
         return id => {
             const str = id.substr(0, 2);
             if (str === '..' || str === './') {
-                return require(path.join(prefix, id));
+                return require(join(prefix, id));
             }
             else {
                 return require(id);

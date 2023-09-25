@@ -25,8 +25,10 @@ import Value from './value.js';
 import JavaScript from './javascript.js';
 import Assignment from './assignment.js';
 import Condition from './condition.js';
+import QueryInParens from './query-in-parens.js';
 import Paren from './paren.js';
 import Media from './media.js';
+import Container from './container.js';
 import UnicodeDescriptor from './unicode-descriptor.js';
 import Negative from './negative.js';
 import Extend from './extend.js';
@@ -43,8 +45,9 @@ export default {
     Ruleset, Element, Attribute, Combinator, Selector,
     Quoted, Expression, Declaration, Call, URL, Import,
     Comment, Anonymous, Value, JavaScript, Assignment,
-    Condition, Paren, Media, UnicodeDescriptor, Negative,
-    Extend, VariableCall, NamespaceValue,
+    Condition, Paren, Media, Container, QueryInParens,
+    UnicodeDescriptor, Negative, Extend, VariableCall,
+    NamespaceValue,
     mixin: {
         Call: MixinCall,
         Definition: MixinDefinition
